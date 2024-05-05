@@ -16,7 +16,7 @@ jobs:
     - name: Archive text file
       uses: actions/upload-artifact@v2
       with:
-        name: hello-artifact
+        name: hello.txt
         path: hello.txt
   download:
     runs-on: ubuntu-latest
