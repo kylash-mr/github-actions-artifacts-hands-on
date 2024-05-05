@@ -16,7 +16,7 @@ jobs:
     - name: Archive text file
       uses: actions/upload-artifact@v2
       with:
-        name: hello.txt
+        name: hello-artifact
         path: hello.txt
   download:
     runs-on: ubuntu-latest
@@ -30,7 +30,7 @@ jobs:
       - name: download the file
         uses: actions/download-artifact@v4
         with:
-          name: hello.txt
+          name: hello-artifact
           path: ./artifact
       - name: Read the file
         run: |
